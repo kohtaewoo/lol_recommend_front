@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ 버튼 */
+.button-primary {
+  @apply bg-indigo-600 hover:bg-indigo-700 text-xl px-6 py-4 rounded-xl text-white font-semibold shadow-md transition;
+}
+
+.nav-button {
+  @apply bg-white text-black px-4 py-2 rounded-lg shadow hover:bg-gray-200 transition;
+}
+
+/* ✅ 인풋 */
+.input-primary {
+  @apply flex-1 px-6 py-4 text-black text-xl rounded-xl shadow-lg focus:outline-none bg-white;
+}
+
+/* ✅ 텍스트 타이틀 */
+.title-main {
+  @apply text-5xl font-extrabold mb-10 drop-shadow-[0_5px_20px_rgba(255,255,255,0.2)];
+}
+
+.section-title {
+  @apply text-4xl sm:text-5xl font-extrabold text-center mb-12 drop-shadow-[0_5px_10px_rgba(255,255,255,0.2)];
+}
+
+.section-subtitle {
+  @apply text-3xl sm:text-4xl font-bold mb-4;
+}
+
+/* ✅ 설명 문구 */
+.subtitle {
+  @apply text-lg sm:text-xl text-gray-300 mb-12 max-w-xl;
+}
+
+.section-desc {
+  @apply text-lg sm:text-xl text-gray-300 leading-relaxed;
+}
+
+.info-text {
+  @apply mt-6 text-sm text-gray-400;
+}
+
+/* ✅ 레이아웃 */
+.section-wrapper {
+  @apply max-w-4xl mx-auto text-center;
+}
+
+.page-wrapper {
+  @apply min-h-screen bg-gradient-to-br from-gray-950 to-gray-900 text-white px-4 py-10 font-sans relative;
+}
+
+/* ✅ 불러오는 중 */
+.loading-text {
+  @apply text-center text-lg animate-pulse;
+}
+
+/* ✅ 카드 */
+.card-wrapper {
+  @apply relative w-full aspect-[3/4] rounded-2xl overflow-hidden border-2 shadow-xl transition-transform duration-[250ms] ease-linear hover:shadow-[0_0_40px_rgba(255,215,0,0.25)];
+  transform-style: preserve-3d;
+  border-image: linear-gradient(135deg, #f9f871, #fca7ff, #70f0ff) 1;
+  border-image-slice: 1;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05), 0 0 40px rgba(255, 215, 0, 0.15);
+}
+
+.card-name {
+  @apply absolute bottom-0 z-30 w-full text-center py-3 bg-black/50 backdrop-blur-sm text-white text-lg font-bold tracking-wide drop-shadow;
+}
+
+.champion-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-12 px-2 sm:px-6;
+}
+
+.champion-card-box {
+  @apply w-full max-w-lg mx-auto aspect-[3/4] drop-shadow-[0_10px_15px_rgba(0,0,0,0.5)] hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all duration-300 ease-in-out;
+}
+
+/* ✅ 라인별 섹션 헤더 */
+.role-section-header {
+  @apply mb-8 py-4 rounded-xl text-center bg-gradient-to-br shadow-md;
+}
+
+/* ✅ 라인별 챔피언 카드 5개 그리드 */
+.role-champion-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6 gap-y-12 px-2 sm:px-6;
+}
+
+/* ✅ 입력된 챔피언 카드 */
+.input-champion-card {
+  @apply w-40 aspect-[3/4];
+}
+
+/* ✅ 입력 챔피언 섹션 */
+.input-champion-section {
+  @apply mb-20 text-center;
+}
+
+.input-champion-title {
+  @apply text-2xl font-bold mb-6 text-white;
+}
+
+.input-champion-list {
+  @apply flex flex-wrap justify-center gap-6;
+}
+
+/* ✅ 추천 요약 */
+.recommend-summary-title {
+  @apply text-3xl font-semibold text-center;
+}
+
+.recommend-summary-desc {
+  @apply text-xl text-gray-300 text-center;
+}
